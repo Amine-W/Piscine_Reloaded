@@ -6,16 +6,9 @@
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:15:40 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/22 12:24:20 by amwahab          ###   ########.fr       */
+/*   Updated: 2025/04/24 10:50:42 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write (1, &c, 1);
-}
 
 void	ft_is_negative(int n)
 {
@@ -29,10 +22,10 @@ void	ft_is_negative(int n)
 	}
 }
 
-/*int main(void)
+int main(void)
 {
     ft_is_negative(1);
     ft_is_negative(-1);
     ft_is_negative(0);
     return 0;
-}*/
+}

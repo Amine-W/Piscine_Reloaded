@@ -6,11 +6,10 @@
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 15:45:58 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/22 15:58:59 by amwahab          ###   ########.fr       */
+/*   Updated: 2025/04/24 10:49:58 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
 
 void    ft_putstr(char *str)
 {

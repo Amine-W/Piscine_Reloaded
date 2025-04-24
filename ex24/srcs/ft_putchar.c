@@ -1,29 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 10:49:02 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/24 10:49:02 by amwahab          ###   ########.fr       */
+/*   Created: 2025/04/24 10:40:38 by amwahab           #+#    #+#             */
+/*   Updated: 2025/04/24 10:40:38 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (i * i < nb)
-		i++;
-	if (i * i == nb)
-		return (i);
-	return (0);
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
 }
 
-int main(void)
-{
-	printf("i", ft_sqrt(16));
-	return (0);
-}

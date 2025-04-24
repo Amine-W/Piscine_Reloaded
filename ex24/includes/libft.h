@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 10:49:02 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/24 10:49:02 by amwahab          ###   ########.fr       */
+/*   Created: 2025/04/24 11:04:39 by amwahab           #+#    #+#             */
+/*   Updated: 2025/04/24 11:04:39 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
-{
-	int	i;
+#ifndef LIBFT_H
+#define LIBFT_H
 
-	i = 0;
-	while (i * i < nb)
-		i++;
-	if (i * i == nb)
-		return (i);
-	return (0);
-}
+#include <unistd.h>
 
-int main(void)
-{
-	printf("i", ft_sqrt(16));
-	return (0);
-}
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
+int		ft_strcmp(char *s1, char *s2);
+int		ft_strlen(char *str);
+void	ft_swap(int *a, int *b);
+
+#endif

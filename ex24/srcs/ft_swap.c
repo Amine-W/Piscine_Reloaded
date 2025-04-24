@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 10:49:02 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/24 10:49:02 by amwahab          ###   ########.fr       */
+/*   Created: 2025/04/24 10:42:54 by amwahab           #+#    #+#             */
+/*   Updated: 2025/04/24 10:42:54 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+void	ft_swap(int *a, int *b)
 {
-	int	i;
-
-	i = 0;
-	while (i * i < nb)
-		i++;
-	if (i * i == nb)
-		return (i);
-	return (0);
+	int	tmp;
+	
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
-int main(void)
-{
-	printf("i", ft_sqrt(16));
-	return (0);
-}

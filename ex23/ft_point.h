@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 10:49:02 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/24 10:49:02 by amwahab          ###   ########.fr       */
+/*   Created: 2025/04/23 18:56:39 by amwahab           #+#    #+#             */
+/*   Updated: 2025/04/23 18:56:39 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
-{
-	int	i;
+#ifndef POINT_S_H
+#define POINT_S_H
 
-	i = 0;
-	while (i * i < nb)
-		i++;
-	if (i * i == nb)
-		return (i);
-	return (0);
-}
-
-int main(void)
+typedef struct ft_point
 {
-	printf("i", ft_sqrt(16));
-	return (0);
-}
+    int x;
+    int y;
+}t_point;
+
+
+#endif

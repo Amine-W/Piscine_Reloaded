@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 10:49:02 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/24 10:49:02 by amwahab          ###   ########.fr       */
+/*   Created: 2025/04/24 10:44:05 by amwahab           #+#    #+#             */
+/*   Updated: 2025/04/24 10:44:05 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+int	ft_strlen(char *str)
 {
 	int	i;
-
+	
 	i = 0;
-	while (i * i < nb)
+	while (str[i])
 		i++;
-	if (i * i == nb)
-		return (i);
-	return (0);
-}
-
-int main(void)
-{
-	printf("i", ft_sqrt(16));
-	return (0);
+	return (i);
 }

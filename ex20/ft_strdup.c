@@ -6,7 +6,7 @@
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 17:25:11 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/22 18:41:54 by amwahab          ###   ########.fr       */
+/*   Updated: 2025/04/24 10:52:42 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,7 @@ int main(void)
     char *dst;
     dst = ft_strdup(str);
     printf("%s", dst);
+	free(dst);
+	free(str);
+	return (0);
 }

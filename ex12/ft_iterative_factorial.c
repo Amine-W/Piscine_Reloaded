@@ -6,7 +6,7 @@
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 14:51:12 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/22 15:01:56 by amwahab          ###   ########.fr       */
+/*   Updated: 2025/04/24 10:51:06 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,10 @@ int	ft_iterative_factorial(int nb)
 	}
 	return (total);
 }
-/*int main(void)
+
+int main(void)
 {
     int    a = 6;
     printf("%i",ft_iterative_factorial(a));
     return 0;
-}*/
+}

@@ -6,7 +6,7 @@
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:25:32 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/22 12:29:42 by amwahab          ###   ########.fr       */
+/*   Updated: 2025/04/24 10:50:47 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	ft_ft(int *nbr)
 	*nbr = 42;
 }
 
-/*int main(void)
+int main(void)
 {
     int c = 2;
     int *ptr = &c;
     ft_ft(ptr);
     printf("%i", c);
-}*/
+}
