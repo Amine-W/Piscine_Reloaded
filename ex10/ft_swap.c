@@ -6,7 +6,7 @@
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 12:31:01 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/24 10:50:51 by amwahab          ###   ########.fr       */
+/*   Updated: 2025/04/26 10:49:10 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_swap(int *a, int *b)
 	*b = tmp;
 }
 
-int main(void)
+/*int main(void)
 {
     int a = 42;
     int b = 1337;
@@ -30,4 +30,4 @@ int main(void)
     ft_swap(ptra, ptrb);
     printf("a: %i", a);
     printf("b: %i", b);
-}
+}*/

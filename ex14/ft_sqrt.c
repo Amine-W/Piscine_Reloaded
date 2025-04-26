@@ -22,8 +22,8 @@ int	ft_sqrt(int nb)
 	return (0);
 }
 
-int main(void)
+/*int main(void)
 {
 	printf("i", ft_sqrt(16));
 	return (0);
-}
+}*/

@@ -12,25 +12,21 @@
 
 #include <stdio.h>
 
-void    ft_foreach(int *tab, int length, void (*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-    int    i;
+	int	i;
 
-    if (!tab || !f || length <= 0)
-        return;
-
-    i = 0;
-    while (i < length)
-    {
-        f(tab[i]);
-        i++;
-    }
+	if (!tab || !f || length <= 0)
+		return ;
+	i = 0;
+	while (i < length)
+	{
+		f(tab[i]);
+		i++;
+	}
 }
 
-
-#include <stdio.h>
-
-void    ft_putnbr(int n)
+/*void    ft_putnbr(int n)
 {
     printf("%d\n", n);
 }
@@ -45,5 +41,4 @@ int main()
     ft_foreach(tab, -1, &ft_putnbr);
     ft_foreach(tab, 5, NULL);
     return (0);
-}
-
+}*/

@@ -6,14 +6,13 @@
 /*   By: amwahab <amwahab@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 09:46:31 by amwahab           #+#    #+#             */
-/*   Updated: 2025/04/23 09:53:23 by amwahab          ###   ########.fr       */
+/*   Updated: 2025/04/26 11:54:58 by amwahab          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
-#define FT_ABS_H
+# define FT_ABS_H
 
-#define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
+# define ABS(Value) ((Value) < 0 ? -(Value) : (Value))
 
 #endif
-

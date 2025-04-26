@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef POINT_S_H
-#define POINT_S_H
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
 typedef struct ft_point
 {
-    int x;
-    int y;
+	int	x;
+	int	y;
 }t_point;
-
 
 #endif
