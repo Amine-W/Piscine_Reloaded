@@ -10,71 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fcntl.h>
 #include <unistd.h>
+#include <fcntl.h>
 
-int	check_argc(int argc);
-int	open_file(char *filename);
-int	read_and_write_file(int fd);
-
-int	main(int argc, char **argv)
+int    main(int ac, char **av)
 {
-	int	fd;
+    int        fd;
+    char    buffer[1];
 
-	if (check_argc(argc))
-		return (1);
-	fd = open_file(argv[1]);
-	if (fd == -1)
-		return (1);
-	if (read_and_write_file(fd))
-		return (1);
-	close(fd);
-	return (0);
-}
-
-int	check_argc(int argc)
-{
-	if (argc < 2)
-	{
-		write(2, "File name missing.", 19);
-		return (1);
-	}
-	else if (argc > 2)
-	{
-		write(2, "Too many arguments.", 20);
-		return (1);
-	}
-	return (0);
-}
-
-int	open_file(char *filename)
-{
-	int	fd;
-
-	fd = open(filename, O_RDONLY);
-	if (fd == -1)
-	{
-		write(2, "Unable to open file.", 21);
-	}
-	return (fd);
-}
-
-int	read_and_write_file(int fd)
-{
-	int		bytes_read;
-	char	buf[1];
-
-	bytes_read = read(fd, buf, 1);
-	while (bytes_read > 0)
-	{
-		write(1, buf, bytes_read);
-		bytes_read = read(fd, buf, 1);
-	}
-	if (bytes_read == -1)
-	{
-		write(2, "Cannot read file.", 18);
-		close(fd);
-		return (1);
-	}
-	return (0);
+    if (ac == 1)
+    {
+        write (2, "File name missing.\n", 19);
+        return (1);
+    }
+    else if (ac > 2)
+    {
+        write (2, "Too many arguments.\n", 20);
+        return (1);
+    }
+    fd = open(av[1], O_RDONLY);
+    if (fd == -1)
+    {
+        write (2, "Cannot read file.\n", 18);
+        return (1);
+    }
+    while (read(fd, buffer, 1))
+        write (1, buffer, 1);
+    close (fd);
+    return (0);
 }
